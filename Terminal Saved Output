@@ -1,0 +1,143 @@
+giLast login: Wed Dec 14 10:46:58 on ttys001
+You have new mail.
+tNeos-MacBook-Pro-5:~ Neo$ cd desktop/omar/invie
+Neos-MacBook-Pro-5:invie Neo$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   images/background.png
+	modified:   images/background2x.png
+	modified:   images/invie-acustica.png
+	modified:   images/invie-acustica2x.png
+	modified:   images/invie-classic.png
+	modified:   images/invie-classic2x.png
+	modified:   images/invie-white.png
+	modified:   images/invie-white2x.png
+	modified:   images/invie.png
+	modified:   images/invie2x.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	images/tinified/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Neos-MacBook-Pro-5:invie Neo$ git checkout gh-pages
+error: pathspec 'gh-pages' did not match any file(s) known to git.
+Neos-MacBook-Pro-5:invie Neo$ git pull
+From https://github.com/OmarFerrer/invieresponsive
+ * [new branch]      gh-pages   -> origin/gh-pages
+Already up-to-date.
+Neos-MacBook-Pro-5:invie Neo$ git checkout gh-pages
+M	images/background.png
+M	images/background2x.png
+M	images/invie-acustica.png
+M	images/invie-acustica2x.png
+M	images/invie-classic.png
+M	images/invie-classic2x.png
+M	images/invie-white.png
+M	images/invie-white2x.png
+M	images/invie.png
+M	images/invie2x.png
+Branch gh-pages set up to track remote branch gh-pages from origin.
+Switched to a new branch 'gh-pages'
+Neos-MacBook-Pro-5:invie Neo$ git merge master
+Already up-to-date.
+Neos-MacBook-Pro-5:invie Neo$ git status
+On branch gh-pages
+Your branch is up-to-date with 'origin/gh-pages'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   images/background.png
+	modified:   images/background2x.png
+	modified:   images/invie-acustica.png
+	modified:   images/invie-acustica2x.png
+	modified:   images/invie-classic.png
+	modified:   images/invie-classic2x.png
+	modified:   images/invie-white.png
+	modified:   images/invie-white2x.png
+	modified:   images/invie.png
+	modified:   images/invie2x.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	images/tinified/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Neos-MacBook-Pro-5:invie Neo$ git push origin gh-pages
+Everything up-to-date
+Neos-MacBook-Pro-5:invie Neo$ git git add *
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+Neos-MacBook-Pro-5:invie Neo$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Neos-MacBook-Pro-5:invie Neo$ git add *
+Neos-MacBook-Pro-5:invie Neo$ git commit -m "images"
+[gh-pages c651d5e] images
+ 35 files changed, 0 insertions(+), 0 deletions(-)
+ rewrite images/background.png (98%)
+ mode change 100644 => 100755
+ rewrite images/background2x.png (93%)
+ mode change 100644 => 100755
+ rewrite images/invie-acustica.png (99%)
+ mode change 100644 => 100755
+ rewrite images/invie-acustica2x.png (98%)
+ mode change 100644 => 100755
+ rewrite images/invie-classic.png (99%)
+ mode change 100644 => 100755
+ rewrite images/invie-classic2x.png (99%)
+ mode change 100644 => 100755
+ rewrite images/invie-white.png (99%)
+ mode change 100644 => 100755
+ rewrite images/invie-white2x.png (99%)
+ mode change 100644 => 100755
+ rewrite images/invie.png (99%)
+ mode change 100644 => 100755
+ rewrite images/invie2x.png (99%)
+ mode change 100644 => 100755
+ create mode 100644 images/tinified/.DS_Store
+ create mode 100755 images/tinified/background.png
+ create mode 100755 images/tinified/background2x.png
+ create mode 100755 images/tinified/invie-acustica.png
+ create mode 100755 images/tinified/invie-acustica2x.png
+ create mode 100755 images/tinified/invie-classic.png
+ create mode 100755 images/tinified/invie-classic2x.png
+ create mode 100755 images/tinified/invie-white.png
+ create mode 100755 images/tinified/invie-white2x.png
+ create mode 100755 images/tinified/invie.png
+ create mode 100755 images/tinified/invie2x.png
+ create mode 100644 images/tinified/tinified.zip
+ create mode 100644 images/tinified/tinified/.DS_Store
+ create mode 100755 images/tinified/tinified/background.png
+ create mode 100755 images/tinified/tinified/background2x.png
+ create mode 100755 images/tinified/tinified/invie-acustica.png
+ create mode 100755 images/tinified/tinified/invie-acustica2x.png
+ create mode 100755 images/tinified/tinified/invie-classic.png
+ create mode 100755 images/tinified/tinified/invie-classic2x.png
+ create mode 100755 images/tinified/tinified/invie-white.png
+ create mode 100755 images/tinified/tinified/invie-white2x.png
+ create mode 100755 images/tinified/tinified/invie.png
+ create mode 100755 images/tinified/tinified/invie2x.png
+ create mode 100644 images/tinified/tinified/tinified.zip
+ create mode 100644 images/tinified/tinified/tinified/.DS_Store
+Neos-MacBook-Pro-5:invie Neo$ git push
+Counting objects: 37, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (36/36), done.
+Writing objects: 100% (37/37), 4.07 MiB | 1.64 MiB/s, done.
+Total 37 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 1 local objects.
+To https://github.com/OmarFerrer/invieresponsive.git
+   7b2733a..c651d5e  gh-pages -> gh-pages
+Neos-MacBook-Pro-5:invie Neo$ git push origin master
+Everything up-to-date
+Neos-MacBook-Pro-5:invie Neo$ 
